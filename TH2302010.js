@@ -35,14 +35,6 @@ var component = function (){
         }
     }
 
-    function validateInfor() {
-        if (account.length > 0){
-            checkAccount(account)
-        } else {
-            alert('Tai khoan chua duoc dang ky!')
-        }
-    }
-
     var action = function() {
         showEye.addEventListener('click', function() {
             password.type = 'text';
@@ -77,7 +69,11 @@ var component = function (){
         })
 
         submit.addEventListener('click', function() {
-            validateInfor()
+            if (account.length > 0){
+                checkAccount(account)
+            } else {
+                alert('Tai khoan chua duoc dang ky!')
+            }
         })
 
         regAcc.addEventListener('click', function() {
@@ -107,7 +103,7 @@ var component = function (){
                 }
                 account.push(logAcc)
                 localStorage.setItem('Accounts_List', JSON.stringify(account))
-                alert('SignIn Successfully!')
+                alert('Register Successfully!')
             }
         })
     }
