@@ -4,6 +4,8 @@ let hideEye = document.getElementById('hideEye');
 let logPage = document.getElementById('log')
 let regPage = document.getElementById('reg')
 
+
+
 showEye.addEventListener('click', function() {
     password.type = 'text';
     showEye.style.display= "none";
