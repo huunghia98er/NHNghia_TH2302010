@@ -60,18 +60,20 @@ var component = function (){
 
         regPage.addEventListener('click', function() {
             document.getElementById('login').style.display = 'none'
-            document.getElementById('row4').style.display = 'none'
+            document.getElementById('log').style.color = 'white'
+            document.getElementById('reg').style.color = 'black'
             document.getElementById('register').style.display = 'block'
             document.getElementById('reg').style.backgroundColor = '#fff'
-            document.getElementById('log').style.backgroundColor = 'rgb(238, 232, 229)'
+            document.getElementById('log').style.backgroundColor = 'rgb(230, 183, 159)'
         })
 
         logPage.addEventListener('click', function() {
             document.getElementById('login').style.display = 'block'
-            document.getElementById('row4').style.display = 'block'
+            document.getElementById('reg').style.color = 'white'
+            document.getElementById('log').style.color = 'black'
             document.getElementById('register').style.display = 'none'
             document.getElementById('log').style.backgroundColor = '#fff'
-            document.getElementById('reg').style.backgroundColor = 'rgb(238, 232, 229)'
+            document.getElementById('reg').style.backgroundColor = 'rgb(230, 183, 159)'
         })
 
         submit.addEventListener('click', function() {
